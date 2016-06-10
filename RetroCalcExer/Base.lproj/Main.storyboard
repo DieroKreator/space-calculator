@@ -52,7 +52,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vYM-c1-NTj">
-                                <rect key="frame" x="160.5" y="139" width="178" height="282"/>
+                                <rect key="frame" x="161" y="139" width="178" height="282"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="MdD-WN-yLj">
                                         <rect key="frame" x="0.0" y="0.0" width="178" height="50"/>
@@ -255,6 +255,17 @@
                                 <fontDescription key="fontDescription" name="Minecraft" family="Minecraft" pointSize="21"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACG-7v-CXw">
+                                <rect key="frame" x="197" y="441" width="104" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="PXJ-PS-Iuk"/>
+                                    <constraint firstAttribute="height" constant="39" id="jjT-Xj-DYy"/>
+                                </constraints>
+                                <state key="normal" image="clear"/>
+                                <connections>
+                                    <action selector="onClearButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sd3-eb-sqX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -267,10 +278,12 @@
                             <constraint firstItem="vYM-c1-NTj" firstAttribute="centerY" secondItem="Tfp-fB-CAe" secondAttribute="centerY" constant="30" id="UVb-3z-oby"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Sbx-vs-K1V" secondAttribute="bottom" id="WaA-Yf-MbN"/>
                             <constraint firstItem="Qv4-uh-0Uh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="b86-5U-LuR"/>
+                            <constraint firstItem="ACG-7v-CXw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cH3-kV-iS6"/>
                             <constraint firstItem="Tfp-fB-CAe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lQk-Tn-eHY"/>
                             <constraint firstItem="vYM-c1-NTj" firstAttribute="centerX" secondItem="Tfp-fB-CAe" secondAttribute="centerX" id="ryD-Xg-jZc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qv4-uh-0Uh" secondAttribute="bottom" id="tE8-af-wSb"/>
                             <constraint firstItem="Tfp-fB-CAe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wa1-eb-FXG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ACG-7v-CXw" secondAttribute="bottom" constant="20" id="zgQ-Zk-mTp"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -297,6 +310,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
