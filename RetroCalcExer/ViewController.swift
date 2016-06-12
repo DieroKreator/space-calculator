@@ -72,8 +72,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onClearButtonPressed(sender: AnyObject) {
-        
-        outputLbl.text = ""
+
+        currentOperation = Operation.Empty
+        outputLbl.text = "0"
     }
     
     func processOperation (op: Operation){
